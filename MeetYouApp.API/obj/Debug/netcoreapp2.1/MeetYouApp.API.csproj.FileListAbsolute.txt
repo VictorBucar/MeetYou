@@ -1,0 +1,14 @@
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\bin\Debug\netcoreapp2.1\MeetYouApp.API.deps.json
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\bin\Debug\netcoreapp2.1\MeetYouApp.API.runtimeconfig.json
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\bin\Debug\netcoreapp2.1\MeetYouApp.API.runtimeconfig.dev.json
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\bin\Debug\netcoreapp2.1\MeetYouApp.API.dll
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\bin\Debug\netcoreapp2.1\MeetYouApp.API.pdb
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.csprojAssemblyReference.cache
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.csproj.CoreCompileInputs.cache
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.RazorAssemblyInfo.cache
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.RazorAssemblyInfo.cs
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.AssemblyInfoInputs.cache
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.AssemblyInfo.cs
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.RazorTargetAssemblyInfo.cache
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.dll
+C:\Users\Marcela\Documents\Visual Studio 2017\Project\MeetYouApp\MeetYouApp.API\obj\Debug\netcoreapp2.1\MeetYouApp.API.pdb

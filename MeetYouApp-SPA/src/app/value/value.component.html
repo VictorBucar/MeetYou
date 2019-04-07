@@ -1,0 +1,10 @@
+<!-- <div *ngFor="let value of values">
+  <b>Value:</b> {{value.id}} |
+  <b>Amount:</b> {{value.amount}}
+</div> -->
+<div *ngFor="let value of values">
+  <div>Value:<span>{{value.id}}</span></div>
+  <div>Amount:<span>{{value.amount}}</span></div>
+</div>
+<h2>{{value}}</h2>
+<button cbulass="button" (click)="add()">Saiba mais aqui!</button>
