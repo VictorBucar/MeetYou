@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MeetYouApp.API.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace MeetYouApp.API.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")] // Rota da api http://localhost:5000/api/values
     [ApiController]
     public class ValuesController : ControllerBase
@@ -27,6 +29,7 @@ namespace MeetYouApp.API.Controllers
         }
 
         // GET api/values/5
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult> Get(int id)
         {

@@ -16,7 +16,6 @@ namespace MeetYouApp.API.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        
         private IAuthRepository _authRepository;
         private IConfiguration _config;
 
@@ -50,29 +49,31 @@ namespace MeetYouApp.API.Controllers
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
 
-            throw new Exception("I Said NO!");
+            //throw new Exception("I Said NO!");
             var userToLogin = await _authRepository.Login(userForLoginDto.Username.ToLower(), userForLoginDto.Password);
 
             if(userToLogin == null)
                 return Unauthorized();
 
-            var claims = new []
-            {
-                new Claim(ClaimTypes.NameIdentifier, userToLogin.Id.ToString()),
-                new Claim(ClaimTypes.Name, userToLogin.Username)
-            };
+            // var claims = new []
+            // {
+            //     new Claim(ClaimTypes.NameIdentifier, userToLogin.Id.ToString()),
+            //     new Claim(ClaimTypes.Name, userToLogin.Username)
+            // };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
+            // var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
 
-            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+            // var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddDays(1),
-                SigningCredentials = credentials
-            };
+            // var tokenDescriptor = new SecurityTokenDescriptor
+            // {
+            //     Subject = new ClaimsIdentity(claims),
+            //     Expires = DateTime.Now.AddDays(1),
+            //     SigningCredentials = credentials
+            // };
 
+            var tokenDescriptor = _authRepository.GenerateToken(userToLogin);
+            
             var tokenHandler = new JwtSecurityTokenHandler();
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
